@@ -11,6 +11,8 @@
 //     console.log(line)
 // })
 
+
+
 import readline from "linebyline";
 const rl = readline('./data.txt');
 
