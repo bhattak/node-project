@@ -2,15 +2,15 @@ import fs, { readFile } from 'fs';
 import readline from 'readline'
 import linereader from 'line-reader'
 
-const readInterface= readline.createInterface({
-    input:fs.createReadStream('./data.txt'),
-    output:process.stdout,
-    console:false
-})
+// const readInterface= readline.createInterface({
+//     input:fs.createReadStream('./data.txt'),
+//     output:process.stdout,
+//     console:false
+// })
 
-readInterface.on('line',(line)=>{
-    console.log(line)
-})
+// readInterface.on('line',(line)=>{
+//     console.log(line)
+// })
 linereader.eachLine('./data.txt',(line)=>{
     line.match('\d{4}-\d{2}-\d{2}')
         console.log(line)
